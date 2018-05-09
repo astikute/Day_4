@@ -78,11 +78,12 @@ namespace Day_4
                     }
                 }
             }
-            Console.Read();
+
 
 
             //tas pats uzdevums ar switch un case - tos izmanto, ja ir vairaki nosacijumi!
-
+            //var ari ar string mainigajiem
+            Console.Write("Ievadiet skaitli: ");
             nolasijums = Console.ReadLine();
             b = Convert.ToInt32(nolasijums);
             switch (b)
@@ -101,13 +102,38 @@ namespace Day_4
                     break;
             }
 
-            //to pasu var atkartot ari ar string!
-            switch (ievade)
+
+            //Uzdevums
+            Console.Write("Ievadiet banknotes nominalvertibu: ");
+            int d = Convert.ToInt32(Console.ReadLine());
+            switch (d)
             {
-                case "piecsturis":
-                    Console.WriteLine("Ja!");
+                case 1:
+                    Console.WriteLine("George Washington");
                     break;
+                case 2:
+                    Console.WriteLine("Thomas Jefferson");
+                    break;
+                case 5:
+                    Console.WriteLine("Abraham Lincoln");
+                    break;
+                case 10:
+                    Console.WriteLine("Alexander Hamilton");
+                    break;
+                case 20:
+                    Console.WriteLine("Andrew Jackson");
+                    break;
+                case 50:
+                    Console.WriteLine("Ulysses S. Grant");
+                    break;
+                case 100:
+                    Console.WriteLine("Benjamin Franklin");
+                    break;
+                default:
+                    Console.WriteLine("Neatbilst neviens!");
+                    break;  
             }
+            Console.Read();
         }
     }
 }
