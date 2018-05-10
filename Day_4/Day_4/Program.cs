@@ -82,7 +82,7 @@ namespace Day_4
 
 
             //tas pats uzdevums ar switch un case - tos izmanto, ja ir vairaki nosacijumi!
-            //var ari ar string mainigajiem
+            //var ari ar string mainigajiem!
             Console.Write("Ievadiet skaitli: ");
             nolasijums = Console.ReadLine();
             b = Convert.ToInt32(nolasijums);
@@ -133,7 +133,40 @@ namespace Day_4
                     Console.WriteLine("Neatbilst neviens!");
                     break;  
             }
+
+            //Tas pats uzdevums ar string un $
+            Console.Write("Ievadiet banknotes nominalvertibu: ");
+            string banknote = Console.ReadLine();
+            switch (banknote)
+            {
+                case "$1":
+                    Console.WriteLine("George Washington");
+                    break;
+                case "$2":
+                    Console.WriteLine("Thomas Jefferson");
+                    break;
+                case "$5":
+                    Console.WriteLine("Abraham Lincoln");
+                    break;
+                case "$10":
+                    Console.WriteLine("Alexander Hamilton");
+                    break;
+                case "$20":
+                    Console.WriteLine("Andrew Jackson");
+                    break;
+                case "$50":
+                    Console.WriteLine("Ulysses S. Grant");
+                    break;
+                case "$100":
+                    Console.WriteLine("Benjamin Franklin");
+                    break;
+                default:
+                    Console.WriteLine("Neatbilst neviens!");
+                    break;
+            }
             Console.Read();
+            Console.Read();
+
         }
     }
 }
